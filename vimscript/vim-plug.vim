@@ -6,7 +6,7 @@ call plug#begin('~/.vim/plugged')
 "language_support
 Plug 'rust-lang/rust.vim'
 Plug 'dense-analysis/ale'
-Plug 'fatih/vim-go',{'do': ':GoUpdateBinaries'}
+"Plug 'fatih/vim-go',{'do': ':GoUpdateBinaries'}
 
 "vim-startify
 Plug 'mhinz/vim-startify'
@@ -93,7 +93,7 @@ Plug 'preservim/nerdtree'
   Plug 'neoclide/jsonc.vim'
 
   " Go
-  Plug 'fatih/vim-go' , { 'for': ['go', 'vim-plug'], 'tag': '*' }
+  "Plug 'fatih/vim-go' , { 'for': ['go', 'vim-plug'], 'tag': '*' }
 
       " Markdown
   Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
@@ -203,7 +203,8 @@ Plug 'preservim/nerdtree'
 
   "Require ["williamboman/mason.nvim"]
   "Bridge mason/null-ls
-  Plug 'jayp0521/mason-null-ls.nvim'
+  "Plug 'jayp0521/mason-null-ls.nvim'
+  Plug 'jay-babu/mason-null-ls.nvim'
 
   "nvim-cmp
   Plug 'hrsh7th/cmp-nvim-lsp' " { name = nvim_lsp }

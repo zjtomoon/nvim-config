@@ -14,10 +14,10 @@ require("mason-lspconfig").setup_handlers({
 		})
 	end,
 
-	["sumneko_lua"] = function()
+	["lua_ls"] = function()
 		local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-		require("lspconfig").sumneko_lua.setup({
+		require("lspconfig").lua_ls.setup({
 			capabilities = capabilities,
 			settings = {
 				Lua = {
@@ -39,15 +39,6 @@ null_ls.setup({
 })
 
 require("mason-null-ls").setup()
-
-require 'mason-null-ls'.setup_handlers({
-	function(source_name, methods)
-		require('mason-null-ls.automatic_setup')(source_name, methods)
-	end,
-	prettier = function (source_name, methods)
-		null_ls.register(null_ls.builtins.formatting.prettier)
-	end,
-})
 
 local lspconfig = require('lspconfig')
 local default_on_attach = function(_,bufnr)
